@@ -1,1 +1,12 @@
-<h1>Recipe #<%= @id %></h1>
+<h1><%= @recipe.name %></h1>
+
+<ul>
+  <% @recipes.each do |recipie| %>
+  <li>
+    <a href="/recipes/"><%= recipie.id %>">
+      <%= @recipe.name %>
+    </a>
+
+    <p>
+      Prep Time: <%= @recipe.prep_time %>
+    </p>
