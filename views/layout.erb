@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <title><%= @title %></title>
+    <!-- Input an instance variable from the server file -->
+  </head>
+  <body>
+    <header>
+      <img src ="http://assets.change.org/photos/3/ux/lk/KvUxlKAomAVbkzN-1600x900-noPad.jpg?1486089928" alt="Cookbook Icon" height="1900px" width="700px">
+      <a href="/">CookBook</a>
+      <!-- Every web page has a link to the homepage at the top -->
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <a href="/about">About Us</a>
+      |
+      <a href="/contact">Contact Us</a>
+      |
+      <a href="/legal">Fine Print</a>
+    </footer>
+  </body>
+</html>
